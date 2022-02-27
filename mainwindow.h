@@ -17,8 +17,8 @@ class MainWindow : public QMainWindow {
   Q_OBJECT
 
 public:
-  explicit MainWindow(QWidget *parent = 0);
-  ~MainWindow() = default;
+  explicit MainWindow(QWidget *parent = nullptr);
+  ~MainWindow() override = default;
 
   QLabel *image_widget_;
 
